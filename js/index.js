@@ -1,5 +1,11 @@
 let audio = new Audio('../audio/t-rex.mp3');
 
+window.addEventListener('touchstart', function () {
+        audio.play()
+        audio.pause()
+        audio.currentTime = 0
+        })
+
 window.addEventListener("scroll", (event) => {
     let trexContainer = document.getElementById("t-rex-Container");
     let scroll = this.scrollY;
