@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.logo {
+  width: 360px;
+  height: 298px;
+}
+
+
+.logo-nico {
+  width: 100%;
+}
+
+
+.logo-2 {
+  width: 330px;
+  height: 588px;
+}
+
+
+.logo-nico-2 {
+  width: 100%;
+}
+
+
+.logo-3 {
+  height: 639px;
+}
+
+
+.logo-nico-3 {
+  height: 100%;
+  width: 100vw;
+  border-bottom: 2px;
+}
+
+
+.text-style {
+  color: rgba(198, 198, 198, 1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: Regular;
+  font-family: Jurassic Park;
+}
+
+.title-style {
+  width: 100vw;
+  height: 24vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 58px;
+  letter-spacing: 1px;
+}
+
+.text-style-age {
+  width: 323px;
+  font-size: 64px;
+  margin: 4vh 0 4vh 0;
+  text-align: center;
+}
+
+.text-style-age span {
+  font-family: Algerian;
+  font-size: 50px;
+}
+
+.text-style-2 {
+  width: 340px;
+  font-size: 48px;
+  text-align: justify;
+  margin: 4vh 0 10vh 0;
+}
+
+.text-style-2 span {
+  font-family: Algerian;
+  font-size: 32px;
+}
+
+.text-style-3 {
+  width: 323px;
+  font-size: 48px;
+  text-align: justify;
+  margin: 8vh 0 6vh 0;
+}
+
+.text-style-4 {
+  width: 323px;
+  font-size: 92px;
+  text-align: center;
+  margin: 0 0 10vh 0;
+}
