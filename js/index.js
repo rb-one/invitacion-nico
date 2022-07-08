@@ -1,9 +1,13 @@
 let audio = new Audio('../audio/t-rex.mp3');
+var counter = 0
 
 window.addEventListener('touchstart', function () {
+        if (counter === 0) {
         audio.play()
         audio.pause()
         audio.currentTime = 0
+        }
+        counter += 1
         })
 
 window.addEventListener("scroll", (event) => {
