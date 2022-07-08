@@ -1,19 +1,21 @@
 let audio = new Audio('../audio/t-rex.mp3');
-var counter = 0
 
-window.addEventListener('touchstart', function () {
-        if (counter === 0) {
+function audioEnable() {
         audio.play()
         audio.pause()
         audio.currentTime = 0
-        }
-        counter += 1
-        })
+    }
+
+window.addEventListener('touchstart', audioEnable)
 
 window.addEventListener("scroll", (event) => {
     let trexContainer = document.getElementById("t-rex-Container");
     let scroll = this.scrollY;
-
+        
+    if (scroll >= 600) {
+        window.removeEventListener('touchstart',audioEnable,false);       
+    }
+        
     if (scroll >= 1300) {
         let trex = document.getElementById("t-rex");
         if (trex === null) {
@@ -23,8 +25,8 @@ window.addEventListener("scroll", (event) => {
             img.id = "t-rex"
             trexContainer.appendChild(img)
         }
-    }
 
+    }
 
     if (scroll >= 1800) {
         audio.play();
@@ -36,9 +38,6 @@ window.addEventListener("scroll", (event) => {
             audio.pause();
             audio.currentTime = 0;
             trex.remove();
-
         }
     }
-
-
 });
